@@ -1,6 +1,7 @@
 public class Shkanova {
 
     public static void main(String[] args){
+
         //Задача 1
         System.out.println("1. Вывод характеристик компьютера\n");
         byte numberOfCores = 12;
