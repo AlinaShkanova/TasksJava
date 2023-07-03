@@ -1,6 +1,6 @@
 public class Shkanova {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         //Задача 1
         System.out.println("1. Вывод характеристик компьютера\n");
@@ -34,25 +34,25 @@ public class Shkanova {
                 "Общая стоимость товаров со скидкой: " + generalSumma + "\n");
 
         //Задача 3
-        System.out.println("3. Вывод слова JAVA\n" );
-        System.out.println("   J    a  v     v  a     " );
-        System.out.println("   J   a a  v   v  a a    " );
-        System.out.println("J  J  aaaaa  V V  aaaaa   " );
-        System.out.println(" JJ  a     a  V  a     a  \n" );
+        System.out.println("3. Вывод слова JAVA\n");
+        System.out.println("   J    a  v     v  a     ");
+        System.out.println("   J   a a  v   v  a a    ");
+        System.out.println("J  J  aaaaa  V V  aaaaa   ");
+        System.out.println(" JJ  a     a  V  a     a  \n");
 
         //Задача 4
-        System.out.println("4. Вывод min и max значений целых числовых типов\n" );
+        System.out.println("4. Вывод min и max значений целых числовых типов\n");
         byte numberByte = Byte.MAX_VALUE;
-        short numberShort  = Short.MAX_VALUE;
-        int numberInt  = Integer.MAX_VALUE;
-        long numberLong  = Long.MAX_VALUE;
+        short numberShort = Short.MAX_VALUE;
+        int numberInt = Integer.MAX_VALUE;
+        long numberLong = Long.MAX_VALUE;
         System.out.println("byte: " + numberByte + ", " + (++numberByte) + ", " + (--numberByte) + "\n" +
                 "short: " + numberShort + ", " + (++numberShort) + ", " + (--numberShort) + "\n" +
                 "int: " + numberInt + ", " + (++numberInt) + ", " + (--numberInt) + "\n" +
                 "long: " + numberLong + ", " + (++numberLong) + ", " + (--numberLong) + "\n");
 
         //Задача 5
-        System.out.println("5. Перестановка значений переменных\n" );
+        System.out.println("5. Перестановка значений переменных\n");
         int x = 2;
         int y = 5;
         System.out.println("Первый способ. Перестановка с помощью третьей переменной\n" +
@@ -75,7 +75,7 @@ public class Shkanova {
         System.out.println("x = " + x + ", " + "y = " + y + "\n");
 
         //Задача 6
-        System.out.println("6. Вывод символов и их кодов\n" );
+        System.out.println("6. Вывод символов и их кодов\n");
         char symbol1 = '#';
         char symbol2 = '&';
         char symbol3 = '@';
@@ -90,7 +90,7 @@ public class Shkanova {
                 "" + code3 + " = " + symbol3 + "\n" + code4 + " = " + symbol4 + "\n" + code5 + " = " + symbol5 + "\n");
 
         //Задача 7
-        System.out.println("7. Вывод в консоль ASCII-арт Дюка\n" );
+        System.out.println("7. Вывод в консоль ASCII-арт Дюка\n");
         char leftBraket = '(';
         char rightBraket = ')';
         char leftSlash = '\\';
@@ -103,7 +103,7 @@ public class Shkanova {
                 rightSlash + underscore + underscore + underscore + underscore + rightSlash + leftSlash + underscore + underscore + leftSlash + "\n");
 
         //Задача 8
-        System.out.println("8. Вывод количества сотен, десятков и единиц числа\n" );
+        System.out.println("8. Вывод количества сотен, десятков и единиц числа\n");
         int n = 123;
         int hundreds = n / 100;
         int dozens = n / 10;
@@ -118,7 +118,7 @@ public class Shkanova {
                 "Произведение = " + multiplication + "\n");
 
         //Задача 9
-        System.out.println("9. Вывод времени\n" );
+        System.out.println("9. Вывод времени\n");
         int secs = 86399;
         int ost1 = secs % 60;
         int del = secs / 60;
