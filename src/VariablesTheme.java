@@ -1,4 +1,4 @@
-public class Shkanova {
+public class VariablesTheme {
 
     public static void main(String[] args) {
 
@@ -100,7 +100,8 @@ public class Shkanova {
                 "   " + rightSlash + "  " + leftSlash + "\n" +
                 "  " + rightSlash + underscore + leftBraket + " " + rightBraket + leftSlash + "\n" +
                 " " + rightSlash + "      " + leftSlash + "\n" +
-                rightSlash + underscore + underscore + underscore + underscore + rightSlash + leftSlash + underscore + underscore + leftSlash + "\n");
+                rightSlash + underscore + underscore + underscore + underscore + rightSlash + leftSlash + "\n" +
+                "" + underscore + underscore + leftSlash + "\n");
 
         //Задача 8
         System.out.println("8. Вывод количества сотен, десятков и единиц числа\n");
@@ -120,10 +121,10 @@ public class Shkanova {
         //Задача 9
         System.out.println("9. Вывод времени\n");
         int secs = 86399;
-        int ost1 = secs % 60;
+        int remainder1 = secs % 60;
         int del = secs / 60;
-        int ost2 = del % 60;
+        int remainder2 = del % 60;
         del = del / 60;
-        System.out.print(del + ":" + ost2 + ":" + ost1);
+        System.out.print(del + ":" + remainder2 + ":" + remainder1);
     }
 }
