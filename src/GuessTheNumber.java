@@ -13,8 +13,8 @@ public class GuessTheNumber {
                 System.out.println("Число " + playerNumber + " меньше того, что загадал компьютер");
             } else
                 break;
-            System.out.println("Вы победили!");
         }
+         System.out.println("Вы победили!");
     }
 }
 
