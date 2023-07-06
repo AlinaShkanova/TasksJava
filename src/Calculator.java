@@ -1,11 +1,14 @@
-public class Calculator {
+import java.util.Random;
 
+public class Calculator {
     public static void main(String[] args) {
-        int a = 3;
-        int b = 3;
-        char sign = '^';
+        Random random = new Random();
+
+        int a = random.nextInt(100) + 1;
+        int b = random.nextInt(100) + 1;
+        char[] operators = {'+', '-', '*', '/', '^', '%'};
+        char sign = operators[random.nextInt(operators.length)];
         int result = 0;
-        int resultDegree = 1;
 
         if (sign == '+') {
             result = a + b;
@@ -14,20 +17,18 @@ public class Calculator {
         } else if (sign == '*') {
             result = a * b;
         } else if (sign == '/') {
-            if (b != 0) {
-                result = a / b;
-            } else {
+            if  (b != 0) {
+            result = a / b;
+        } else {
                 System.out.println("На ноль делить нельзя!");
-                return;
             }
-        } else if (sign == '^') {
-            for (int i = 0; i < b; i++) {
-                resultDegree = resultDegree * a;
-            }
-            System.out.println("Результат: " + a + " " + sign + " " + b + " = " + resultDegree);
-            return;
         }
-        if (sign == '%') {
+            else if (sign == '^') {
+            result = 1;
+            for (int i = 0; i < b; i++) {
+                result *= a;
+            }
+        } else if (sign == '%') {
             if (b != 0) {
                 result = a % b;
             } else {
